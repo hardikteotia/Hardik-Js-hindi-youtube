@@ -14,16 +14,27 @@ const obj1 = {
     }
 }
 
-console.log(obj1.Details.FullName.FirstName);
+// console.log(obj1.Details.FullName.FirstName);
 
-console.log(Object.keys(obj1)); // Convert [[objects]] in one array we can use loops in this as per our need
-console.log(Object.values(obj1)); // Convert [[objects Values]] in one array we can use loops in this as per our need
-console.log(Object.entries(obj1)); // Convert [[objects : Values]] in one array we can use loops in this as per our need
-// We can merge two objects
+// console.log(Object.keys(obj1)); // Convert [[objects]] in one array we can use loops in this as per our need
+// console.log(Object.values(obj1)); // Convert [[objects Values]] in one array we can use loops in this as per our need
+// console.log(Object.entries(obj1)); // Convert [[objects : Values]] in one array we can use loops in this as per our need
+// // We can merge two objects
 
 const List1 = {1: "a", 2: "b"}
 const List2 = {4: "c", 3: "d"}
 
 const FinalList = { ...List1, ...List2}
 
-console.log(FinalList);
+// console.log(FinalList);
+
+const course = {
+    name : "js course",
+    instructor : "Chai with code"
+}
+
+// how to destructurized the above object
+
+const {instructor : inst}  = course
+
+console.log(inst);
