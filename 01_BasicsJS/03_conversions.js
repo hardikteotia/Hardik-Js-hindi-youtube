@@ -23,3 +23,4 @@ console.log(null == 0 );//explaination below
 
 // When comparing null to 0, JavaScript first checks if the two values are of the same type. Since null is an object and 0 is a number, it tries to coerce one or both values to a common type.
 // In this case, null is not converted to a number when compared to 0, and thus the comparison null == 0 evaluates to false.
+console.log("2" === 2);
