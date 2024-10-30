@@ -28,9 +28,10 @@ const User = {
 // console.log(User.age);
 // console.log(User.age);
 
-const mySym = Symbol("key1")
+const mySym = Symbol("symbol1")
 const object = {
     [mySym] : "key1"
 }
 console.log(object[mySym]);
 console.log(typeof(object[mySym]));
+console.log(object);
